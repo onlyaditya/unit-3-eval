@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="menu" style="margin: auto;">
+      <!--Create Show Products button here, give id as "show-products". avoid making spelling mistakes in HTML id's-->
+      <button id="show_products" onclick="replace()">Show products</button>
+    </div>
+    <div>
+      <h2>Add Products</h2>
+      <form id="product_form" onsubmit="addData(event)" style="display: grid; grid-template-columns: auto; grid-gap: 20px; width: 400px;">
+          <input type="text" id="product_brand" placeholder="Brand">
+          <input type="text" id="product_name" placeholder="Name">
+          <input type="number" id="product_price" placeholder="Price">
+          <input type="text" id="product_image" placeholder="Image">
+          <button id="submit">Submit</button>
+        </form>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
